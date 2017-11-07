@@ -128,8 +128,8 @@ class HeaderApp extends Component{
 			</div>
         </div>
             {
-            this.state.formValid?<NavLink to={"/map"}className="btn btn-lg btn-block btn-ingresar">Ingresar</NavLink>
-            :<button type="submit" className="btn btn-lg btn-block btn-ingresar" disabled={!this.state.formValid}>Ingresar</button>
+            this.state.formValid?<NavLink to={"/boards"}className="btn btn-lg btn-block btn-ingresar">Sign Up</NavLink>
+            :<button type="submit" className="btn btn-lg btn-block btn-ingresar" disabled={!this.state.formValid}>Sign Up</button>
             }
             <NavLink to={"/signin"} >Sign in</NavLink>
       </form>			
