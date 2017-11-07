@@ -9,6 +9,7 @@ import {HashRouter, Switch, Route} from 'react-router-dom'
 import App from './App';
 import Signin from './signin'
 import Signup from './signup'
+import Boards from './boards'
 
 const Index = () => (
    <Provider store={store}>
@@ -18,6 +19,7 @@ const Index = () => (
             <Route  exact path = "/" component={Signin}/>
             {/* <Route  exact path = "/signin" component={Boards}/> */}
             <Route exact path ="/signin" component={Signin}/>
+            <Route exact path ="/boards" component={Boards}/>
             <Route exact path ="/signup" component={Signup}/>
          </Switch>
       </HashRouter>

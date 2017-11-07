@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 // import React, {Component} from 'react';
 // import { FormErrors } from './FormErrors';
 import './signin.css';
@@ -91,9 +90,10 @@ class HeaderApp extends Component{
             placeholder="Password" value={this.state.password} onChange={this.handleUserInput}  />
 			</div>
         </div>
+
             {
-            this.state.formValid?<NavLink to={"/boars"}className="btn btn-lg btn-block btn-ingresar">Sign in</NavLink>
-            :<button type="submit" className="btn btn-lg btn-block btn-ingresar" disabled={!this.state.formValid}>Ingresar</button>
+            this.state.formValid?<NavLink to={"/boards"} className="btn btn-lg btn-block btn-ingresar">Sign in</NavLink>
+            :<button type="submit" className="btn btn-lg btn-block btn-ingresar" disabled={!this.state.formValid}>Sign in</button>
             }
 
             <NavLink to={"/signup"}>Create new account</NavLink>
