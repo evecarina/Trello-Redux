@@ -17,7 +17,7 @@ const Index = () => (
       {/* <Carousel dishes={dishes} /> */}
          <Switch>
             <Route  exact path = "/" component={Signin}/>
-            {/* <Route  exact path = "/signin" component={Boards}/> */}
+            {/*<Route  exact path = "/signin" component={Boards}/> */}
             <Route exact path ="/signin" component={Signin}/>
             <Route exact path ="/boards" component={Boards}/>
             <Route exact path ="/signup" component={Signup}/>
