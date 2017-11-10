@@ -1,16 +1,119 @@
-.boards{
-    background: #89609E;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
+.board{
+    color:#555;
+    font-weight: 800;
+    padding: 10px;
+    height:80px;
+    background-color: #D6D4DC;
+    border-radius: 5px;
 }
-
-nav{
-    background: #745286 !important;
+.board-wrap{
+    padding:10px;
 }
-
-.brandBoard{
-    display: inline-block;
-    height: 32px;
-    width: 110px;
+.nostyle:hover{
+    text-decoration: none;
+}
+.list{
+    display:inline-block;
+    margin:5px;
+    justify-content: center;
+    font-weight: 600;
+    width:250px;
+    color:#666;
+    border-radius:5px;
+    background-color: #D6D4DC;
+}
+.board-view{
+    overflow:auto;
+    height: 87vh;
+}
+.board-view > div{
+    vertical-align: top;
+}
+.card{
+    width:90%;
+    margin: 10px;
+    font-weight: 100;
+    background: white;
+    color:#666;
+	border-radius: 5px;
+	border:0;
+    padding: 6px;
+    margin-bottom:10px;
+}
+.btn-link{
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    color:#555;
+}
+.btn-link:hover{
+    background-color: #bbb;
+    text-decoration: none;
+	color:#333;
+	border-radius: 0px 0px 5px 5px;
+}
+.p-margin{
+    margin: 10px;
+}
+.newcard{
+	width:90%;
+	font-size: 12px;
+}
+.btn-add{
+    margin:10px;
+    border:0;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-link-cancel{
+    border:0;
+    background:none;
+    color:rgb(49, 144, 199);
+}
+.white-sp{
+	white-space: normal;
+}
+.new-list{
+	display:inline-block;
+	height:300px;
+}
+.btn-new-list{
+	color:#ccc;
+	text-align: left;
+	background: #745286;
+	border:0;
+	border-radius: 5px;
+	padding: 10px;
+	width:250px;
+	margin:5px;
+	margin-right: 20px;
+}
+.btn-new-list:hover{
+	background: #634175;
+}
+.margin-right{
+	margin-right: 25px;
+}
+.size-input{
+	font-size:14px;
+}
+.btn-new-board{
+	color:#ccc;
+	text-align: left;
+	background: #745286;
+	border:0;
+	border-radius: 5px;
+	padding: 10px;
+	width:100%;
+	margin-right: 20px;
+}
+.btn-new-board:hover{
+	background: #634175;
+}
+.add-board{
+	
+	border-radius: 4px;
+	color:#777;
+	background-color: #E2E4E6;
 }

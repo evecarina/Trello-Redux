@@ -13,11 +13,8 @@ export const users=[
         ]
     }
 ];
-
 const initialState = {
     users:users
 }
-
-
 const store = createStore(initialState);
 export default store;
