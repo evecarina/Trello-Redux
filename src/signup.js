@@ -1,8 +1,6 @@
 
 import React, { Component } from 'react';
 import './signup.css';
-// import React, {Component} from 'react';
-// import { FormErrors } from './FormErrors';
 import {NavLink} from 'react-router-dom'
 
 class HeaderApp extends Component{
@@ -12,7 +10,6 @@ class HeaderApp extends Component{
 	  <header className="text-center">
 		<div className="btnVolver">
             <img class ="imgbird" src="https://phoenix-trello.herokuapp.com/images/logo-11ecccd65d1c7977997eb6f0bc0002ad.png?vsn=d"/>
-			{/* <NavLink to="/Home"><i className="fa fa-angle-left backend" aria-hidden="true"></i>{<back/>}</NavLink> */}
 		</div>
       </header>
       );
@@ -89,7 +86,6 @@ class HeaderApp extends Component{
         <div className={`form-group ${this.errorClass(this.state.formErrors.name)}`}>            
             <div className='input-group'>
                 <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>
-                {/* <label htmlFor="email">Email address</label> <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>*/}
                 <input type="name" required className="form-control inputName" name="name"
                  placeholder="Name"  value={this.state.name}  onChange={this.handleUserInput}  />
             </div>
@@ -98,7 +94,6 @@ class HeaderApp extends Component{
         <div className={`form-group ${this.errorClass(this.state.formErrors.lastname)}`}>            
             <div className='input-group'>
                 <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>
-                {/* <label htmlFor="email">Email address</label> <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>*/}
                 <input type="lastname" required className="form-control inputName" name="lastname"
                  placeholder="Lastname"  value={this.state.lastname}  onChange={this.handleUserInput}  />
             </div>
@@ -107,7 +102,6 @@ class HeaderApp extends Component{
         <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>            
             <div className='input-group'>
                 <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>
-                {/* <label htmlFor="email">Email address</label> <span className="input-group-addon"><i id="arrow" className="fa fa-user-o fa-2x" ></i></span>*/}
                 <input type="email" required className="form-control inputName" name="email"
                  placeholder="Email"  value={this.state.email}  onChange={this.handleUserInput}  />
             </div>

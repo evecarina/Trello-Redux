@@ -1,4 +1,5 @@
-import createStore from 'redux-zero';
+import createStore from "redux-zero";
+
 export const users=[
     {
         firstName: "Evelyn",
@@ -13,8 +14,49 @@ export const users=[
         ]
     }
 ];
+
+let boards = [
+    {
+        name: "Portafolio",
+        lists: [
+             {        
+            name:"Estilos",
+            cards:["Maquetacion","identacion","Gh-pages"],
+            add:false
+             },
+             { 
+             name:"Estilos",
+             cards:["Maquetacion","identacion","Gh-pages"],
+             add:false
+             }
+        ],
+        add:false
+    },
+    
+    {
+        name: "Proyecto Suchi",
+        lists: [
+            {
+                name:"Estilos",
+                cards:["Maquetacion","identacion","Gh-pages"],
+                add:false
+            },
+            {
+                name:"Estilos",
+                cards:["Maquetacion","identacion","Gh-pages"],
+                add:false
+            }
+        ],
+        add:false
+    }
+    
+];
 const initialState = {
-    users:users
-}
+    users:users,
+    boards: boards,
+    selectedBoard: 0,
+    addBoard:false
+};
+
 const store = createStore(initialState);
 export default store;

@@ -5,14 +5,7 @@ export const setView = ( index )=>{
         selectedBoard:index
     })
 }
-export const setTrueAddCard = (selected,index) =>{
-    let newBoards = [...store.getState().boards];
-    newBoards[selected].lists[index].add=true;
-    store.setState({
-        boards:newBoards
-    })
-}
-export const addCardList = (selected,index,newCard) =>{
+export const addBoardList = (selected,index,newCard) =>{
     let newBoards = [...store.getState().boards];
     newBoards[selected].lists[index].add=false;
     newBoards[selected].lists[index].cards.push(newCard);
@@ -20,15 +13,14 @@ export const addCardList = (selected,index,newCard) =>{
         boards:newBoards
     })
 }
-export const setAddCardFalse = (selected,index) =>{
+export const setTrueAddBoard = (selected,index) =>{
     let newBoards = [...store.getState().boards];
-    newBoards[selected].lists[index].add=false;
+    newBoards[selected].lists[index].add=true;
     store.setState({
         boards:newBoards
     })
 }
-
-export const setTrueAddList = (selected) =>{
+export const setTrueAddTask = (selected) =>{
     let newBoards = [...store.getState().boards];
     newBoards[selected].add=true;
     store.setState({
@@ -54,8 +46,6 @@ export const setAddListFalse = (selected) =>{
         boards:newBoards
     })
 }
-
-
 export const setAddBoardTrue = () =>{
     store.setState({
         addBoard:true
@@ -75,5 +65,13 @@ export const addNewBoard = (newBoard) =>{
 export const setAddBoardFalse = () =>{
     store.setState({
         addBoard:false
+    })
+}
+
+export const setAddCardFalse = (selected,index) =>{
+    let newBoards = [...store.getState().boards];
+    newBoards[selected].lists[index].add=false;
+    store.setState({
+        boards:newBoards
     })
 }
